@@ -900,7 +900,7 @@
 
         // ── MODE MAINTENANCE ──────────────────────────────
         // Mettre MAINTENANCE_MODE = true pour bloquer l'accès
-        // Mot de passe pour désactiver : 'Navdasenju'
+        // Mot de passe pour désactiver : 'Navdakazekage'
         const MAINTENANCE_MODE = true;
         let _maintenanceUnlocked = false; // devient true après bon mot de passe
 
@@ -4403,7 +4403,7 @@ const INTRO_BANNERS = {"Madara": "https://i.imgur.com/gFIPsic.png", "Obito": "ht
             // Mot de passe mode TEST
             const _pwd = prompt('🔒 Mode TEST\n\nEntrez le mot de passe :');
             if (_pwd === null) return;
-            if (_pwd !== 'Navdasenju') { naAlert('❌ Mot de passe incorrect.'); return; }
+            if (_pwd !== 'Navdakazekage') { naAlert('❌ Mot de passe incorrect.'); return; }
             // Utiliser toutes les cartes du jeu (pas seulement celles du deck restant)
             const allGameCards = ARENA_CARDS.techniques || [];
             if (!allGameCards || allGameCards.length === 0) { naAlert('Pas de cartes'); return; }
@@ -4758,7 +4758,7 @@ const INTRO_BANNERS = {"Madara": "https://i.imgur.com/gFIPsic.png", "Obito": "ht
                 btnUnlock.textContent = 'Accéder';
                 btnUnlock.style.cssText = 'width:100%;background:rgba(220,38,38,0.2);border:1px solid rgba(220,38,38,0.35);color:#fca5a5;border-radius:10px;padding:12px;font-size:13px;font-weight:700;cursor:pointer;font-family:Georgia,serif';
                 btnUnlock.onclick = function() {
-                    if (pwdInput.value === 'Navdasenju') {
+                    if (pwdInput.value === 'Navdakazekage') {
                         _maintenanceUnlocked = true;
                         ov.remove();
                         document.getElementById('app').innerHTML = '';
